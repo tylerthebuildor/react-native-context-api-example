@@ -1,0 +1,3 @@
+rootProject.name = 'sup'
+
+include ':app'
