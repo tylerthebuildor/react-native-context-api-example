@@ -16,10 +16,12 @@ class ThemeProvider extends React.Component {
   render() {
     return (
       <ThemeContext.Provider value={this.state.theme}>
-        <TouchableOpacity onPress={this.toggleTheme} style={{ marginTop: 50 }}>
-          <Text>toggle theme</Text>
-        </TouchableOpacity>
-        {this.props.children}
+        <View style={{ padding: 50 }}>
+          <TouchableOpacity onPress={this.toggleTheme}>
+            <Text>toggle theme</Text>
+          </TouchableOpacity>
+          {this.props.children}
+        </View>
       </ThemeContext.Provider>
     );
   }
